@@ -1,3 +1,9 @@
+<h1 align="center">
+  <br>
+  <a href="/"><img src=".github/media/obsnode.png" alt="..." width="900"></a>
+  <br>
+</h1>
+
 # n8n-nodes-obs-websocket
 
 ![n8n.io - Workflow Automation](https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png)
