@@ -1,0 +1,7 @@
+node_modules
+dist
+.npmrc
+.env
+*.backup
+.DS_Store
+package-lock.json

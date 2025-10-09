@@ -1,0 +1,55 @@
+{
+  "name": "@mashgizmo/n8n-nodes-obs-websocket",
+  "version": "1.0.0",
+  "description": "n8n node for OBS Studio WebSocket control",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "obs",
+    "obs-studio",
+    "websocket",
+    "streaming",
+    "twitch",
+    "livestreaming",
+    "IRL"
+  ],
+  "license": "MIT",
+  "homepage": "https://irlcore.com",
+  "author": {
+    "name": "Gizmo",
+    "email": "dev@irlcore.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mashgizmo/n8n-nodes-obs-websocket.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && npm run copy-icons",
+    "copy-icons": "mkdir -p dist/nodes/ObsWebsocket && cp nodes/ObsWebsocket/*.svg dist/nodes/ObsWebsocket/ 2>/dev/null || :",
+    "dev": "tsc --watch"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/ObsWebsocketApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/ObsWebsocket/ObsWebsocket.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.0",
+    "n8n-workflow": "*",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "obs-websocket-js": "^5.0.5"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
